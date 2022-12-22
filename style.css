@@ -1,1 +1,957 @@
 
+*
+
+{
+
+  margin :0;
+
+  padding :0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: 15pt;
+
+    width : min(100%,480px);
+
+    height :100vh;
+
+    margin :auto auto auto auto ;
+
+    transition: all .2s ease-in-out ;
+
+   font-family: 'Varela Round', sans-serif;
+
+}
+
+.cover_container 
+
+{
+
+  position :fixed ;
+
+  z-index :1000;
+
+  width : min(100%,480px);
+
+  height :100vh;
+
+  top: 0;
+
+  background : #534371 ;
+
+  display :flex;
+
+  justify-content :space-around ;
+
+  align-items :center ;
+
+  flex-direction :column ;
+
+}
+
+.cover_container.disappear 
+
+{
+
+  display: none ;
+
+}
+
+.cover_container  .header 
+
+{
+
+  width:100%;
+
+  text-align :center ;
+
+}
+
+.cover_container .header h1 
+
+{
+
+  font-weight :500 ;
+
+  color :#B7B9BE;
+
+  padding:10px ;
+
+}
+
+.cover_container  .header span 
+
+{
+
+  font-size :1.7em ;
+
+  color :#FFFFFF ;
+
+}
+
+.create_account 
+
+{
+
+  width: 100%;
+
+  text-align :center ;
+
+}
+
+.create_account.removed 
+
+{
+
+  display: none ;
+
+}
+
+.create_account  h2 
+
+{
+
+  font-size :.8em;
+
+  font-weight :700 ;
+
+  padding :10px ;
+
+  color:#FFFFFF ;
+
+}
+
+.create_account .input__
+
+{
+
+  width:100%;
+
+  display :flex;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  flex-wrap :wrap ;
+
+  flex-grow :1 ;
+
+}
+
+.create_account  .input__ input, button
+
+{
+
+  padding: 5px ;
+
+  outline :none ;
+
+  display :inline-block ;
+
+  height :40px;
+
+  margin :5px ;
+
+  text-align :center ;
+
+  border-radius :5px ;
+
+  border :1px solid #F1F1F1 ;
+
+  background : #FFFFFF ;
+
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.create_account  .input__ button 
+
+{
+
+  width:195px;
+
+  background-color : #034D4D ;
+
+  color: #FFFFFF ;
+
+  font-size :1.2em ;
+
+}
+
+.create_account  span 
+
+{
+
+ display: block ;
+
+ text-align :left ;
+
+ padding :15px ;
+
+ font-size :.5em;
+
+ font-weight :700 ;
+
+ color : #FA1815;
+
+}
+
+.login_account 
+
+{
+
+  width: 100%;
+
+  text-align :center ;
+
+  display :flex ;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  flex-direction :column ;
+
+}
+
+.login_account.removed
+
+{
+
+  display: none ;
+
+}
+
+.login_account span 
+
+{
+
+  text-align :center ;
+
+  padding :10px ;
+
+  font-size :.5em;
+
+  font-weight :700;
+
+  color : #FA1815;
+
+}
+
+.login_account .user_header
+
+{
+
+  padding :10px ;
+
+}
+
+.user_header h2 
+
+{
+
+  font-weight :400;
+
+  color :#FFFFFF ;
+
+}
+
+.user_header span 
+
+{
+
+  font-size :.5em;
+
+  font-weight :700 ;
+
+    color :#FFFFFF ;
+
+}
+
+.user_input 
+
+{
+
+  width: 100%;
+
+  text-align :center ;
+
+  display:flex ;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  flex-direction :column ;
+
+}
+
+.user_input  input
+
+{
+
+  padding :5px ;
+
+  height :40px;
+
+  text-align :center ;
+
+  background : #FFFFFF ;
+
+  border :1px solid #F1F1F1 ;
+
+  outline :none ;
+
+  margin:5px ;
+
+  width :70%;
+
+ font-family: 'Varela Round', sans-serif;
+
+}
+
+.user_input button
+
+{
+
+  padding :5px ;
+
+  height :40px;
+
+  text-align :center ;
+
+  outline :none ;
+
+  margin:5px ;
+
+  width :70%;
+
+ font-family: 'Varela Round', sans-serif;
+
+}
+
+.user_input button 
+
+{
+
+  background-color : #034D4D;
+
+  color: #FFFFFF;
+
+  font-size :1em;
+
+   font-family: 'Varela Round', sans-serif;
+
+}
+
+.user_input   #forgot_password_btn
+
+{
+
+  background-color: transparent ;
+
+  border-bottom :1px solid #F1F1F1;
+
+  border :transparent ;
+
+  display :block ;
+
+  text-align :center ;
+
+  width :50%;
+
+  font-size :.7em;
+
+  margin-left :70px ;
+
+  text-decoration :underline ;
+
+   font-family: 'Varela Round', sans-serif;
+
+}
+
+header
+
+{
+
+ width : min(100%,480px);
+
+position :fixed;
+
+top: 0;
+
+left:0;
+
+display :flex ;
+
+justify-content :space-around ;
+
+align-items :center ;
+
+background : #FFFFFF ;
+
+box-shadow :0 0 7px rgba(3,3,3,.3);
+
+z-index :30 ;
+
+}
+
+header .btn_lock
+
+{
+
+  border: 1px solid #B7B9BE;
+
+  background : #BEDBDB ;
+
+  
+
+}
+
+header   #open_nav 
+
+{
+
+  border: 1px solid #B7B9BE;
+
+  background : #BEDBDB ;
+
+  
+
+}
+
+header .sub_head 
+
+{
+
+  padding :10px ;
+
+  text-align :center ;
+
+}
+
+header .sub_head h1 
+
+{
+
+  font-size :1.2em ;
+
+}
+
+header .sub_head span 
+
+{
+
+  font-size :.5em;
+
+  text-align :center ;
+
+}
+
+.nav_bar_container
+
+{
+
+  position :fixed;
+
+  right :0 ;
+
+  top: 0;
+
+  height :100vh;
+
+  width:0;
+
+  border :1px solid rgba(3,3,3,.2) ;
+
+  z-index :50;
+
+  box-shadow :   0 0 7px rgba(3,3,3,.2) ;
+
+  background : #FFFFFF ;
+
+  overflow :hidden ;
+
+  transition: width .1s ease-in-out ;
+
+}
+
+.nav_bar_container.active 
+
+{
+
+  width:75vw;
+
+  transition: width .1s ease-in-out ;
+
+}
+
+.nav_bar_container  .nav_head 
+
+{
+
+  width :100%;
+
+  margin-bottom :auto ;
+
+  text-align :center ;
+
+  background : #FFFFFF ;
+
+  display :flex ;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  position:relative ;
+
+  border-bottom :1px solid rgba(3,3,3,.3);
+
+}
+
+.nav_bar_container  .nav_head h3 
+
+{
+
+  padding :10px ;
+
+}
+
+.nav_bar_container .nav_head button 
+
+{
+
+  position :absolute ;
+
+  left :3px;
+
+  
+
+}
+
+.nav_bar_container  .change_username__
+
+{
+
+  width: 98%;
+
+  height:65px;
+
+  overflow :hidden ;
+
+  text-align :center ;
+
+  margin :30px auto 0 ;
+
+  transition: height .2s ease-in-out ;
+
+  padding :5px ;
+
+}
+
+.nav_bar_container .change_username__.active
+
+{
+
+  height :480px; 
+
+  transition: height .2s ease-in-out ;
+
+}
+
+.nav_bar_container .change_username__ .change_head__
+
+{
+
+  width :100%;
+
+  padding :10px ;
+
+  text-align :center ;
+
+  display :flex ;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+}
+
+.change_head__  button 
+
+{
+
+  display: block ;
+
+  width :100%;
+
+  padding :10px 20px ;
+
+ border: 1px solid #BEDBDB;
+
+}
+
+.nav_bar_container  .change_username__  .username__inputs
+
+{
+
+  display :flex;
+
+  width :100%;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  flex-direction :column ;
+
+  padding :10px ;
+
+}
+
+.change_username__  .username__inputs  input
+
+{
+
+  width: 100%;
+
+  padding :10px ;
+
+  outline :none ;
+
+  margin :5px ;
+
+   font-family: 'Varela Round', sans-serif;
+
+}
+
+.username__inputs button 
+
+{
+
+  width: 100%;
+
+  padding :10px ;
+
+  outline :none ;
+
+}
+
+#delete_account__ 
+
+{
+
+  background : #550006 ;
+
+  color :#FFFFFF ;
+
+}
+
+section 
+
+{
+
+  margin :20% auto 0 ;
+
+  height:80vh;
+
+  width : min(100%,480px);
+
+  text-align :left ;
+
+}
+
+section h3 
+
+{
+
+  font-size :.7em;
+
+  padding :5px ;
+
+}
+
+section .wrapper 
+
+{
+
+  width :100%;
+
+  height :100%;
+
+  display :flex ;
+
+  justify-content :flex-start ;
+
+  overflow :auto;
+
+  align-items :center ;
+
+  flex-direction :column ;
+
+  padding :10px ;
+
+}
+
+section .wrapper .card
+
+{
+
+  width:100%;
+
+  height:auto;
+
+  position :relative ;
+
+  margin :10px auto 0 ;
+
+  background : #FFFFFF ;
+
+  box-shadow :0 0 7px rgba(3,3,3,.4);
+
+}
+
+.wrapper  .card.removed
+
+{
+
+  display: none ;
+
+}
+
+.wrapper  .card .cover_card 
+
+{
+
+  position :absolute ;
+
+  width :100%;
+
+  height:80%;
+
+  display :flex ;
+
+  justify-content :center ;
+
+  align-items :center ;
+
+  background:#DEDBDB;
+
+}
+
+.card  .cover_card.unhide
+
+{
+
+  opacity: 0 ;
+
+}
+
+.card .cover_card  button 
+
+{
+
+  background: #FFFFFF ;
+
+}
+
+.wrapper .card  .details 
+
+{
+
+  width :100%;
+
+  padding :10px ;
+
+}
+
+.card .details p 
+
+{
+
+  font-size :.7em;
+
+  padding :10px ;
+
+  font-weight :300 ;
+
+}
+
+.card .details span 
+
+{
+
+  font-weight :400;
+
+}
+
+.card .date__ 
+
+{
+
+  width :100%;
+
+  display :flex ;
+
+  justify-content :space-between ;
+
+  align-items :center ;
+
+}
+
+.card .date__  span 
+
+{
+
+  font-size :.6em;
+
+  display :inline-block ;
+
+  padding :10px ;
+
+}
+
+.card .date__  .delete 
+
+{
+
+  font-size: 1.2em ;
+
+  line-height :.8 ;
+
+  margin-left: auto ;
+
+}
+
+.create_card_container 
+
+{
+
+  position:fixed;
+
+  bottom :100px;
+
+  width : min(80%,480px);
+
+  height:(40vh,50vh);
+
+  background :#FFFFFF ;
+
+  right :10%;
+
+  
+
+}
+
+.create_card_container.popup 
+
+{
+
+  display: none ;
+
+}
+
+.create_card_container .inputs_wrapper
+
+{
+
+  width:100%;
+
+  height:100%;
+
+  display :flex;
+
+  justify-content :space-around;
+
+  align-items :center;
+
+  flex-direction :column ;
+
+  padding :5px ;
+
+}
+
+.inputs_wrapper  input 
+
+{
+
+  width :100%;
+
+  padding :15px ;
+
+  margin :5px ;
+
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.inputs_wrapper button 
+
+{
+
+  width: 100%;
+
+  background : #BEDBDB;
+
+  font-size :1em ;
+
+  font-weight :400 ;
+
+}
+
+.add_btn
+
+{
+
+  width : min(100%,480px);
+
+  display :flex;
+
+  justify-content :center ;
+
+  align-items :center;
+
+  position :fixed ;
+
+  z-index :30 ;
+
+  height :45px;
+
+  background :#FFFFFF ;
+
+  bottom :0 ;
+
+  box-shadow :0 0 7px rgba(3,3,3,.4);
+
+}
+
+.add_btn button 
+
+{
+
+  font-size :2em;
+
+  margin-bottom :70px ;
+
+  line-height :.2 ;
+
+  height :55px;
+
+  width:55px;
+
+  border-radius :50%;
+
+  display :block ;
+
+  background :#FFFFFF ;
+
+  box-shadow :0 0 7px rgba(3,3,3,.4);
+
+}
+
