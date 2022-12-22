@@ -845,7 +845,7 @@ section .wrapper .card
 
   right :10%;
 
-  
+  z-index :100;
 
 }
 
