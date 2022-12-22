@@ -1,1 +1,465 @@
 
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+
+    passwords-saver
+
+  </title>
+
+  
+
+  <!-- HTML -->
+
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  
+
+  
+
+  <!-- Custom Styles -->
+
+  <script src="main.js" defer></script> 
+
+  <script src="card.js" defer></script>
+
+  <script src="settings.js" defer></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Project -->
+
+  
+
+ <div class="cover_container">
+
+   <div class="header">
+
+      <h1>
+
+      Passwords Saver
+
+    </h1>
+
+    
+
+    <span class="material-symbols-outlined">
+
+       lock
+
+     </span>
+
+    
+
+   </div>
+
+    
+
+ <div class="create_account">
+
+  <h2>
+
+ Before we continue, you must sign up by setting up a password & username.
+
+  </h2>
+
+  <div class="input__">
+
+ <input type="text" name="" id="input_username" placeholder="John Doe">
+
+ <input type="password" name="" id="input_password" placeholder="Password">
+
+ <input type="password" name="" id="input_re_password" placeholder="Re-Password">
+
+ <input type="text" name="" id="password_back_input" placeholder="Password backup">
+
+  <button id="sign_up_btn">Sign up</button>
+
+  </div>
+
+  <span id="feedback_message"></span>
+
+ </div>
+
+ 
+
+    <div class="login_account">
+
+     <div class="user_header">
+
+     <h2 id="greeting">
+
+       </h2>
+
+      <span>
+
+     Enter your password info to continue
+
+    </span>
+
+     </div>
+
+     
+
+     <div class="user_input">
+
+       
+
+   <input type="password" name="" id="login_input" placeholder="Enter your saved password">
+
+   
+
+    <input type="text" name="" id="backup_password_input" placeholder="Backup password">
+
+    
+
+    <input type="password" name="" id="enter_new_password_input" placeholder="Enter new password">
+
+    
+
+   <button id="login_btn">Login</button> 
+
+   
+
+  <button id="login_btn_new">Change</button>
+
+  
+
+   <button id="forgot_password_btn">
+
+     Forgot Password
+
+   </button>
+
+   <button id="cancel_change">
+
+     Cancel
+
+   </button>
+
+     </div>
+
+     
+
+     <span id="feedback_user"></span>
+
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+
+  <header>
+
+    <button class="material-symbols-outlined btn_lock">
+
+      lock
+
+    </button>
+
+    <div class="sub_head">
+
+     <h1>Passwords-Saver</h1> 
+
+     <span>
+
+       Keep your passwords safe & secure 
+
+       </span>
+
+    </div>
+
+    <button id="open_nav" class="material-symbols-outlined">
+
+      settings
+
+    </button>
+
+  </header>
+
+  
+
+  
+
+  <div class="nav_bar_container">
+
+   <div class="nav_head">
+
+     <button id="close_nav" class="material-symbols-outlined">
+
+       close
+
+     </button>
+
+     <h3>Settings</h3>
+
+   </div>
+
+    
+
+    <div class="settings_wrapper">
+
+      
+
+          <div class="change_username__">
+
+            <div class="change_head__">
+
+             <button id="changeUsername">Change Username</button>
+
+            </div>
+
+      
+
+            <div class="username__inputs">
+
+       <input type="text" name="" id="change_username_input" placeholder="Enter new username">
+
+           <button id="change_password_btn">Change</button>
+
+            </div>
+
+          </div>
+
+      
+
+      
+
+      
+
+          <div class="change_username__ change_password__ ">
+
+            <div class="change_head__">
+
+              <button id="changeUPassword">Change Password</button>
+
+            </div>
+
+      
+
+            <div class="username__inputs">
+
+        <input type="password" name="" id="OldPasswordInput" placeholder="Enter old password">
+
+        <input type="password" name="" id="NewPasswordInput" placeholder="Enter new password">
+
+        <input type="password" name="" id="ReNewPasswordInput" placeholder="Confirme new password">
+
+        <button id="changePassword_btn">
+
+          Change Password
+
+          </button>
+
+            </div>
+
+          </div>
+
+      
+
+      
+
+          <div class="change_username__ generate_password__  ">
+
+            <div class="change_head__">
+
+              <button id="Gene_pass">
+
+                Generate Passwords
+
+              </button>
+
+            </div>
+
+      
+
+            <div class="username__inputs">
+
+      
+
+        <input type="text" name="" id="passwords_generators_input" placeholder="Passwords Generator" readonly>
+
+              <button id="relay_btn">
+
+                <span class="material-symbols-outlined">
+
+                  replay
+
+                </span>
+
+              </button>
+
+              <button id="copy_btn">Copy</button>
+
+            </div>
+
+          </div>
+
+      
+
+      
+
+          <div class="change_username__">
+
+            <div class="change_head__">
+
+              <button id="changeUPassword">
+
+                Download Apk
+
+              </button>
+
+            </div>
+
+      
+
+      
+
+            <div class="username__inputs">
+
+              <input type="text" name="" id="" placeholder="Enter password">
+
+              <button>Delete Account</button>
+
+            </div>
+
+          </div>
+
+      
+
+          <div class="change_username__ delete_account__ ">
+
+            <div class="change_head__">
+
+              <button id="delete_account__">Delete Account</button>
+
+            </div>
+
+      
+
+            <div class="username__inputs">
+
+              <input type="password" name="" id="del_account_input" placeholder="Enter password">
+
+              <button id="del_account_btn">Delete Account</button>
+
+            </div>
+
+          </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <section>
+
+    <h3 id="user_name">
+
+    </h3>
+
+    <div class="wrapper">
+
+    </div>
+
+  </section>
+
+  
+
+  
+
+  <div class="create_card_container">
+
+    
+
+    <div class="inputs_wrapper">
+
+      
+
+   <input type="text" name="" id="account_name" placeholder="site">
+
+   
+
+    <input type="text" name="" id="account_username" placeholder="username">
+
+    
+
+     <input type="password" name="" id="account_password" placeholder="password">
+
+     
+
+     <button id="save_data_btn">save</button>
+
+     
+
+    </div>
+
+    
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="add_btn">
+
+    <button class="material-symbols-outlined" id="showCreateCard">
+
+     add_circle
+
+    </button>
+
+  </div>
+
+  
+
+  
+
+</body>
+
+</html>
+
